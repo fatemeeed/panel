@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: IRANSans;
+    src: url('../fonts/IRANSansWeb_Light.woff') format('woff');
+}
+
+* {
+    direction: rtl;
+
+    text-align: right;
+
+    font-family: IranSans;
+}
+
+.bg-gray{
+
+    background-color: #404E67;
+    color: #dcdcdc;
+}
+
+.logo{
+    max-height: 3.5rem;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+.search-area{
+    background-color: #dcdcdc;
+    padding: .3rem .6rem;
+    border-radius:2rem;
+}
+
+.search-input{
+    background-color: rgb(0, 0, 0,0);
+    outline: none;
+    border: none;
+}
+
+.notification-img{
+
+    width: 3rem;
+    border-radius: .1rem;
+
+
+}
+.notification-user{
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: .3rem;
+}
+.notification-text{
+    font-size: .7rem;
+    line-height: .7rem;
+
+}
+.notification-time{
+    font-size: .6rem;
+    line-height: .6rem;
+    color: #919aa3;
+}
+
+.bg-custom-yellow{
+
+    background: -webkit-gradient(linear , left top , right top , from(#feb798), to(#fe9365));
+    background: -moz-linear-gradient(to right, #feb798, #fe9365);
+    
+    background: linear-gradient(to right, #feb798, #fe9365);
+}
+
+.bg-custom-green{
+    
+    background: -webkit-gradient(linear , left top , right top , from(#0df3a3), to(#0ac282));
+    background: -moz-linear-gradient(to right, #0df3a3, #0ac282);
+    background: linear-gradient(to right, #0df3a3, #0ac282);
+}
+
+.bg-custom-pink{
+    
+    background: -webkit-gradient(linear , left top , right top , from(#fe909e), to(#fe5e78));
+    background: -moz-linear-gradient(to right, #fe909e, #fe5e78);
+    background: linear-gradient(to right, #fe909e, #fe5e78);
+}
+
+.bg-custom-blue{
+
+    background: -webkit-gradient(linear , left top , right top , from(#01dbef), to(#01a9ac));
+    background: -moz-linear-gradient(to right, #01dbef, #01a9ac);
+    background: linear-gradient(to right, #01dbef, #01a9ac);
+}
+
