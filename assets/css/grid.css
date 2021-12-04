@@ -94,6 +94,7 @@
     flex:0 0 15rem;
     background-color:#404E67 ;
     color: #dcdcdc;
+    overflow-y:scroll;
     
 }
 .sidebar-container{
@@ -119,11 +120,12 @@
     font-size: .9rem;
     padding: 0 1rem;
     margin-top: 1rem;
+    color: #ffbf00;
     columns: #999999;
 }
 .sidebar-link{
     font-size: .8rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: .4rem 1rem;
     display: block;
     text-decoration: none;
@@ -148,7 +150,7 @@
 .sidebar-group-link{
 
     font-size: .8rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: .4rem 0;
     color: #dcdcdc;
 
