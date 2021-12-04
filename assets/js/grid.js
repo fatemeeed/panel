@@ -87,19 +87,63 @@ $(document).ready(function(){
         
     });
 
+});
+
+    $('#full-screen').click(function(){
+
+        toggleFullScreen();
+
+
+    });
+
+    function toggleFullScreen()
     
+    {
+        if((document.fullScreenElement && document.fullScreenElement !=null) || 
+        (!document.mozFullScreen && !document.webkitIsFullScreen)){
 
-    
-    // $('.sidebar-group-link.sidebar-group-link-active').click(function(){
+            if(document.documentElement.requestFullscreen){
+                document.documentElement.requestFullscreen();
+            }
+            else if(document.documentElement.mozRequestFullscreen){
+                document.documentElement.mozRequestFullscreen();
+            }
+            else if(document.documentElement.webkitRequestFullscreen){
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
 
-       
-    //     alert('hi');
+            $('#screen-compress').removeClass('d-none');
+            $('#screen-expand').addClass('d-none');
 
-    //     $('.sidebar-group-link').removeClass('sidebar-group-link-active');
-    //     $('.sidebar-group-link').children('.sidebar-dropdown-toggle').children('.angle').removeClass('fa-angle-down');
-    //     $('.sidebar-group-link').children('.sidebar-dropdown-toggle').children('.angle').addClass('fa-angle-left');
+        }
+        else{
         
-    // });
+
+            if(document.cancelFullScreen){
+
+                document.cancelFullScreen();
+ 
+            }
+            else if(document.mozCancelFullScreen){
+
+                document.mozCancelFullScreen();
+
+            }
+            else if(document.webkitCancelFullScreen){
+
+                document.webkitCancelFullScreen();
+
+            }
+
+            $('#screen-compress').addClass('d-none');
+            $('#screen-expand').removeClass('d-none');
+
+        }
+
+    }
+
+
+    
 
 
 
@@ -112,4 +156,3 @@ $(document).ready(function(){
 
     
 
-})
